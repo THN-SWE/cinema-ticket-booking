@@ -61,6 +61,8 @@
   }
   
   .body{
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(228, 236, 242);
     margin-top:10px;
     max-width: 98%;
@@ -80,12 +82,14 @@
   }
 
   .show_times {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:start;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content:center;
     margin: 10px;
+    
   }
-  
+
+
   
   
  
@@ -111,10 +115,21 @@
   /* padding: 10px; */
   margin: 10px;
   }
-  .show_times div button{
+  /* .show_times div button{
     padding: 0;
-  }
+  } */
 
   .show_times div button a{
     text-decoration: none;
   }
+
+  @media (max-width:500px){
+    .show_times {
+        
+        grid-template-columns: repeat(3, 1fr);
+     
+        
+      }
+  }
+  
+ 
