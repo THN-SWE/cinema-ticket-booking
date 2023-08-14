@@ -1,3 +1,4 @@
+ 
 .theater{
     color: aliceblue;
     /* background-color: rgb(25, 25, 42); */
@@ -63,7 +64,7 @@
     background-color: rgb(228, 236, 242);
     margin-top:10px;
     max-width: 98%;
-    height: 36vh;
+    height: auto;
 
     display: flex;
     /* justify-content: ; */
@@ -73,7 +74,7 @@
   .movie_name{
     display: flex;
     flex-direction: column;
-    width: fit-content;
+   
     /* align-items:center ; */
     justify-content: center;
   }
@@ -81,12 +82,14 @@
   .show_times {
     display: flex;
     flex-wrap: wrap;
+    justify-content:start;
+    margin: 10px;
   }
   
   
   
  
-  .show_times div{
+  /* .show_times div{
     border: 1px solid rgb(137, 162, 184);
     display: flex;
   padding: 2px;
@@ -94,8 +97,19 @@
    width: fit-content;
   align-items: center;
   height: fit-content;
-  /* padding: 10px; */
+ 
   margin: 1px;
+  } */
+  .show_times div{
+    border: 1px solid rgb(137, 162, 184);
+    display: flex;
+  padding: 10px;
+  background-color: aliceblue;
+   width: fit-content;
+  align-items: center;
+  height: fit-content;
+  /* padding: 10px; */
+  margin: 10px;
   }
   .show_times div button{
     padding: 0;
